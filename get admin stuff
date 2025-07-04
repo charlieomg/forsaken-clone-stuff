@@ -1,9 +1,4 @@
-OrionLib:MakeNotification({
-	Name = "Warning",
-	Content = "PATCHED IN NEXTIX TEMPLATE CLONES, May not work if clone changed admin char names.",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+DiscordLib:Notification("WARNING", "Doesnt work in some games", "aww")
 
 local args = {
 	"PurchaseContent",
