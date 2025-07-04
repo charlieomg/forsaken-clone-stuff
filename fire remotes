@@ -1,22 +1,7 @@
-
-local remoteCount = 0
-	local failedCount = 0
-
-	for _, obj in ipairs(game:GetDescendants()) do
-		if not obj:IsDescendantOf(COREGUI) and (obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction")) then
-			Spawn(function()
-				local ok
-				if obj:IsA("RemoteEvent") then
-					ok = pcall(function() obj:FireServer() end)
-				elseif obj:IsA("RemoteFunction") then
-					ok = pcall(function() obj:InvokeServer() end)
-				end
-
-				if ok then
-					remoteCount=remoteCount + 1
-				else
-					failedCount=failedCount + 1
-				end
-			end)
-		end
-	end
+for i,v in pairs(game:GetDescendants()) do 
+  pcall(function()  
+    if v:IsA("RemoteEvent") then
+      v:FireServer()
+    end
+  end)
+end
