@@ -28,22 +28,22 @@ end)
 
 btns:Seperator()
 
-btns:Button("destroy", function()
+btns:Button("destroy (broken)", function()
 
 for count = 1,500,1 do
   for i,v in pairs(game:GetDescendants()) do 
     pcall(function()
       if v:IsA("RemoteEvent") then
         v:FireServer()
-      end --forgot this
-    end) --forgot this
-  end --forgot this
+      end 
+    end) 
+  end 
 wait()
 end
 
 end)
 
-serv:Channel("by doug")
+serv:Channel("soon")
 
 
-win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+win:Server("Player (soon)", "http://www.roblox.com/asset/?id=6031075938")
