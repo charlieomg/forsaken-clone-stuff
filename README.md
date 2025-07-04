@@ -7,4 +7,4 @@ BETA 1.5 : added destroy which is in beta beta idk its broken rn
 
 (current) BETA 2 : updated a few things
 
-BETA 3 : added float and a few more stuff
+BETA 3 : fixed admin character giver thingy added float and a few more stuff
