@@ -1,4 +1,4 @@
-DiscordLib:Notification("WARNING", "Doesnt work in some games", "aww")
+
 
 local args = {
 	"PurchaseContent",
