@@ -7,7 +7,7 @@ BETA 1 : created script
 
 BETA 1.5 : added destroy which is in beta beta idk its broken rn
 
-<span style="color: green;">(current)</span> BETA 2 : updated a few things <span style="color: red;">ADMIN CHARACTERS BROKEN</span>
+<span style="color: #FF5261;">(current)</span> BETA 2 : updated a few things <span style="color: red;">ADMIN CHARACTERS BROKEN</span>
 
 
 BETA 3 : fixed admin character giver thingy added float and a few more stuff
