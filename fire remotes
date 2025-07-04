@@ -1,3 +1,10 @@
+OrionLib:MakeNotification({
+	Name = "Warning",
+	Content = "(updating in future) DOESNT WORK IN OLDER GAMES",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 local remoteCount = 0
 	local failedCount = 0
 
