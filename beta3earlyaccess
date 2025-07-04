@@ -43,6 +43,38 @@ end
 
 end)
 
+btns:Seperator()
+
+btns:Button("Give 250 Malice", function()
+
+for count = 1,50,1 do
+  for i,v in pairs(game:GetDescendants()) do 
+    pcall(function()
+      if v:IsA("RemoteEvent") then
+        v:FireServer()
+      end 
+    end) 
+  end 
+wait()
+end
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Notification"; 
+Text = "Gave about 250 Malice"; 
+Icon = "rbxassetid://57254792"; 
+Duration = 3; 
+})
+
+end)
+
+btns:Seperator()
+
+btns:Button("Float", function()
+
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = 50
+
+end)
+
 serv:Channel("soon")
 
 
